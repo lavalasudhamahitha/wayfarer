@@ -1,0 +1,149 @@
+/* Basic Developer Style - Simple and Functional */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200') center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+.card {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand h3 {
+    font-weight: bold;
+}
+
+/* Messages in chatbot */
+.message {
+    margin-bottom: 15px;
+}
+
+.bot-message {
+    text-align: left;
+}
+
+.user-message {
+    text-align: right;
+}
+
+/* Form elements */
+.form-control, .form-select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Place cards */
+.place-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+.place-card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.add-to-trip-btn {
+    transition: all 0.3s;
+}
+
+.add-to-trip-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.add-to-trip-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Hotel selection modal */
+.hotel-card-modal {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hotel-card-modal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2) !important;
+}
+
+.hotel-card-modal.border-success {
+    box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.25);
+}
+
+/* Payment section */
+#payment-section {
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
